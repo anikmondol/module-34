@@ -98,6 +98,7 @@ const handleSearch = (isShowAll) => {
     const searchText = searchField.value;
     // console.log(searchText)
     loadPhone(searchText, isShowAll)
+    getData(true)
 }
 
 const toggleProgressSpinner = (isTrue) => {
@@ -117,5 +118,17 @@ const handleShowAll = () => {
     handleSearch(true);
 }
 
+const getData = ((phones) =>{
+    const noData = document.getElementById('no-data')
+    if(searchText = phones){
+        console.log('anik')
+    }
+    else{
+        console.log(noData)
+    }
+    
+})
+
+getData()
 
 loadPhone();
